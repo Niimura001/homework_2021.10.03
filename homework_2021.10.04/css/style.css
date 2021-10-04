@@ -3,7 +3,11 @@
 }
 body {
   max-width: 1300px;
+  margin: 0;
   font-family: "Shippori Mincho", serif;
+}
+html {
+  max-width: 1300px;
 }
 img {
   width: 100%;
@@ -77,7 +81,7 @@ img {
 }
 .firstview-campaign_btn {
   position: absolute;
-  top: 300px;
+  top: 290px;
   left: 170px;
   background-color: #ff4384;
   width: 350px;
@@ -88,4 +92,125 @@ img {
   box-shadow: 0px 0px 10px gray;
   margin: 100px auto 0;
   display: block;
+}
+.header-bar {
+  width: 100%;
+  height: 70px;
+  background-color: #55bbbb;
+  text-align: center;
+  position: relative;
+}
+.header-bar::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  border: 40px solid transparent;
+  border-top: 35px solid #55bbbb;
+  margin-left: -40px;
+}
+.header-bar-txt {
+  color: #fff;
+  line-height: 60px;
+}
+.header-bar-txt-big {
+  font-size: 2em;
+}
+.check-list {
+  width: 600px;
+  margin: 60px auto 0px;
+  display: flex;
+}
+.check-img {
+  width: 200px;
+}
+.check-list__list {
+  display: inline-block;
+  width: 500px;
+  height: 240px;
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #55bbbb;
+  background: #fff;
+  border-radius: 30px;
+  border: solid 2px #55bbbb;
+  list-style-type: none;
+  text-align: center;
+  list-style-image: url(../img/check.svg);
+  list-style-position: inside;
+}
+.check-list__list li {
+  font-size: 23px;
+  line-height: 80px;
+  text-decoration: underline;
+}
+.care-bar {
+  width: 100%;
+  height: 250px;
+  background-color: #55bbbb;
+  text-align: center;
+  color: #fff;
+  line-height: 2.5em;
+}
+.care-bar p {
+  padding-top: 50px;
+}
+.care-bar-ttl {
+  font-size: 40px;
+  height: 70px;
+  font-family: "Amatic SC", cursive;
+}
+.care-bar-bigtxt {
+  font-size: 40px;
+}
+.care-bar-red {
+  font-size: 40px;
+  color: #ff4384;
+}
+.point-flex__item {
+  max-width: 1000px;
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.point-card {
+  width: 30%;
+  height: 200px;
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 2px #55bbbb;
+}
+.box-ttl {
+  position: absolute;
+  display: inline-block;
+  top: -15px;
+  left: 15px;
+  padding: 0 9px;
+  line-height: 1;
+  background: #fff;
+  color: #55bbbb;
+  font-family: "Amatic SC", cursive;
+  font-size: 30px;
+}
+.card-ttl {
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  font-size: 27px;
+  line-height: 1.5em;
+}
+.card-red {
+  color: #ff4384;
+}
+.card-subtxt {
+  position: absolute;
+  top: 130px;
+  left: 15px;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+.copyright {
+  text-align: center;
+  margin-bottom: 25px;
 }
